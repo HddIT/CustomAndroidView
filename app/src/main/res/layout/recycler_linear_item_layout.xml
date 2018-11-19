@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/headImg"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_width="110dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="110dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/headImg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/address_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_marginLeft="5dp"
+                android:text="韩国品牌"
+                android:textColor="@color/content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/content_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/title"
+            android:textSize="@dimen/title_size"
+            android:layout_marginTop="2dp"
+            android:text="韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌韩国品牌" />
+
+        <TextView
+            android:id="@+id/content"
+            android:text="描述"
+            android:textSize="@dimen/content_size"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:text="自营 "
+            android:textSize="@dimen/content_size"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/price"
+            android:text="¥999 "
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/title_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.example.pzdf.jinjie.view.DateBarView
+        android:id="@+id/dateBar"
+        android:layout_margin="5dp"
+        android:layout_below="@id/headImg"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+</RelativeLayout>
